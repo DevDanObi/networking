@@ -75,10 +75,8 @@ Hence,
 </p>
 
 
-
-
-## Console and Remote Access Configuration
-Configure the console line to use local authentication with login local and ensure a login prompt is required before access is granted. Set an exec-timeout of 30 minutes and enable logging synchronous to prevent system messages from interrupting command input. Verify that console access requires authentication and that sessions remain stable. Configure all VTY lines to use local authentication with login local and restrict access to SSH only using the transport input ssh command. Ensure Telnet access is completely disabled. Set an appropriate exec-timeout and verify that remote sessions behave correctly under login attempts.
+## Console Access Configuration
+Configure a user account cisco with secret ccna on each router. Use type the highest encryption algorithm available in the device. Configure the console line to require login with a local user account. Set a 30-minute inactivity timeout. Enable synchronous logging.
 
 ## SSH Configuration
 Ensure the domain name dancorp.com is configured, then generate RSA keys with a maximum available size of 4096 bits. Enable SSH version 2 only and verify that SSH is active. Test remote access by connecting from another device using SSH and confirm that login is successful using the cisco user account. Verify that Telnet connections are rejected and that sessions are encrypted.
