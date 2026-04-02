@@ -12,7 +12,7 @@ The original lab was sourced from NetworkLessons / GNS3Vault-style materials. Th
 
 ## Scenario
 <p align="center">
-  <img src="image.png" width="600">
+  <img src="./image.png" width="600">
 </p>
 
 You are configuring a network consisting of three routers named **godzilla**, **kingkong**, and **nessie**.
@@ -24,7 +24,7 @@ The objective is to establish full connectivity across all networks using:
 
 This lab simulates a real enterprise environment under the organization **DanCorp**.
 
-# SECTION 1: LAB TASKS
+# LAB TASKS (Questions)
 
 ## Device Identity and Base Configuration
 Configure each router with the hostname godzilla, kingkong, and nessie respectively and verify that the hostname is correctly reflected in the CLI prompt. Configure the domain name as dancorp.com and confirm that it is applied. Disable DNS lookup to prevent delays caused by mistyped commands and verify that incorrect commands no longer trigger name resolution attempts. Configure a secure enable secret password using jeremysitlab and confirm that it is stored in encrypted form. Ensure that no enable password exists in the configuration and verify that unauthorized users cannot access privileged EXEC mode.
