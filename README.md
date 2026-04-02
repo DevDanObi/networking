@@ -36,7 +36,7 @@ These labs are for practice and learning purposes. Configurations may vary depen
 
 ## Author
 
-Daniel Obi-Nwosu
+BugsBunny
 
 ## Disclaimer
 
