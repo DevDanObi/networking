@@ -12,7 +12,7 @@ The original lab was sourced from NetworkLessons / GNS3Vault-style materials. Th
 
 ## Scenario
 <p align="center">
-   <img src="./image-5.png" width="600">
+   <img src="./image-5.png" width="800">
 
 </p>
 
