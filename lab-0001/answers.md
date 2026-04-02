@@ -57,21 +57,21 @@ Hence,
 
 
 #### godzilla
-<p align="center">
-  <img src="./image-6.png" width="450">
-  <img src="./image-8.png" width="450"><br>
+<p align="left">
+  <img src="./image-6.png" width="500">
+  <img src="./image-8.png" width="500"><br>
 </p>
 
 #### nessie
-<p align="center">
-  <img src="./image-9.png" width="450">
-  <img src="./image-10.png" width="450"><br>
+<p align="left">
+  <img src="./image-9.png" width="500">
+  <img src="./image-10.png" width="500"><br>
 </p>
 
 #### kingkong
-<p align="center">
-  <img src="./image-13.png" width="450">
-  <img src="./image-15.png" width="450"><br>
+<p align="left">
+  <img src="./image-13.png" width="500">
+  <img src="./image-15.png" width="500"><br>
 </p>
 
 
