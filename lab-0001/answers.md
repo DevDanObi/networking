@@ -53,15 +53,27 @@ Hence,
 
 - 192.168.13.0/28 -> 192.168.13.* 255.255.255.240
 
-- 192.168.12.0/25 -> 192.168.23.* 255.255.255.192
+- 192.168.23.0/26 -> 192.168.23.* 255.255.255.192
 
 
-
+#### godzilla
 <p align="center">
   <img src="./image-6.png" width="450">
   <img src="./image-8.png" width="450"><br>
-
 </p>
+
+#### nessie
+<p align="center">
+  <img src="./image-9.png" width="450">
+  <img src="./image-10.png" width="450"><br>
+</p>
+
+#### kingkong
+<p align="center">
+  <img src="./image-13.png" width="450">
+  <img src="./image-15.png" width="450"><br>
+</p>
+
 
 
 
