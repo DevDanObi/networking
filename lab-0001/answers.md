@@ -35,11 +35,10 @@ Configure each router with the hostname godzilla, kingkong, and nessie respectiv
 #### Answers
 
 <p align="center">
-  <img src="./image-1.png" width="500"><br>
-  <img src="./image-3.png" width="500"><br>
-  <img src="./image-4.png" width="500"><br>
+  <img src="./image-1.png" width="450">
+  <img src="./image-3.png" width="450"><br>
+  <img src="./image-4.png" width="450">
 </p>
-
 
 ## IP Addressing and Subnet Design
 Assign IP addresses to all router interfaces based on the addressing scheme provided in the topology diagram shown above. Determine the correct subnet masks for each network segment without relying on predefined values and ensure all IP addresses fall within valid ranges. Verify that there are no overlapping addresses or conflicts. Confirm connectivity between directly connected routers using ping and ensure all interfaces in use are operational. Configure "godzialla" to provide the default route to the internet for the entire network, the interface leading to the internet will be a dchp client to the ISP network.
