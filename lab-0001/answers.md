@@ -27,7 +27,7 @@ The objective is to establish full connectivity across all networks using:
 
 This lab simulates a real enterprise environment under the organization **DanCorp**.
 
-# LAB TASKS (Questions)
+# LAB TASKS (Answers)
 
 ## Device Identity and Base Configuration
 Configure each router with the hostname godzilla, kingkong, and nessie respectively and verify that the hostname is correct. Configure the domain name as dancorp.com and confirm that it is applied. Disable DNS lookup to prevent delays caused by mistyped commands and verify that incorrect commands no longer trigger name resolution attempts. Configure a secure enable secret "jeremysitlab" and confirm that it is stored in most encrypted form available on the routers. Ensure that no enable password exists in the configuration and verify that unauthorized users cannot access privileged EXEC mode.
