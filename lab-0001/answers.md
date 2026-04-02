@@ -12,7 +12,7 @@ The original lab was sourced from NetworkLessons / GNS3Vault-style materials. Th
 
 ## Scenario
 <p align="center">
-   <img src="./image-2.png" width="600">
+   <img src="./image-5.png" width="600">
 
 </p>
 
@@ -35,14 +35,35 @@ Configure each router with the hostname godzilla, kingkong, and nessie respectiv
 #### Answers
 
 <p align="center">
-  <img src="./image-1.png" width="500">
-  <img src="./image-3.png" width="500">
-  <img src="./image-4.png" width="500">
+  <img src="./image-1.png" width="500"><br>
+  <img src="./image-3.png" width="500"><br>
+  <img src="./image-4.png" width="500"><br>
 </p>
 
 
 ## IP Addressing and Subnet Design
-Assign IP addresses to all router interfaces based on the addressing scheme provided in the topology diagram shown above. Determine the correct subnet masks for each network segment without relying on predefined values and ensure all IP addresses fall within valid ranges. Verify that there are no overlapping addresses or conflicts. Confirm connectivity between directly connected routers using ping and ensure all interfaces in use are operational.
+Assign IP addresses to all router interfaces based on the addressing scheme provided in the topology diagram shown above. Determine the correct subnet masks for each network segment without relying on predefined values and ensure all IP addresses fall within valid ranges. Verify that there are no overlapping addresses or conflicts. Confirm connectivity between directly connected routers using ping and ensure all interfaces in use are operational. Configure "godzialla" to provide the default route to the internet for the entire network, the interface leading to the internet will be a dchp client to the ISP network.
+
+#### Answers
+
+For the IP addressing, the subnet mask we need for the configuration is in the "SLASH" notation, but we need it to appear in the decimal notation. 
+
+Hence,
+
+- 192.168.12.0/25 -> 192.168.12.* 255.255.255.128
+
+- 192.168.13.0/28 -> 192.168.13.* 255.255.255.240
+
+- 192.168.12.0/25 -> 192.168.23.* 255.255.255.192
+
+
+
+<p align="center">
+  <img src="./image-6.png" width="450">
+  <img src="./image-8.png" width="450"><br>
+
+</p>
+
 
 
 ## Console and Remote Access Configuration
