@@ -15,8 +15,8 @@ Structured lab scenarios, routing-based configurations, troubleshooting exercise
 
 Each lab typically includes:
 
-questions.md – tasks and objectives  
-answers.md – solutions and configurations  
+- questions.md – tasks and objectives  
+- answers.md – solutions and configurations  
 
 ## Technologies Covered
 
