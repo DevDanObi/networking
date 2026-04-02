@@ -11,9 +11,8 @@ https://github.com/DevDanielAwele/labs/blob/main/gns3vault-archive/CCNA%20RS/icn
 The original lab was sourced from NetworkLessons / GNS3Vault-style materials. This version has been modified to reflect modern infrastructure practices, including improved structure, clearer task separation, enhanced security emphasis, and alignment with enterprise workflows.
 
 ## Scenario
-
 <p align="center">
-  <img src="image.png" width="500">
+  <img src="image.png" width="600">
 </p>
 
 You are configuring a network consisting of three routers named **godzilla**, **kingkong**, and **nessie**.
