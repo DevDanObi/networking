@@ -92,6 +92,19 @@ Ensure the domain name "dancorp.com" is configured, then generate RSA keys with 
   <img src="./image-24.png" width="500">
 </p>
 
+## Loopback Configuration and Router Identification
+Create loopback0 interfaces on each router and assign the following addresses:  
+- godzilla → 11.11.11.11/24  
+- nessie → 2.2.2.2/24  
+- kingkong → 3.3.3.3/24  
+
+
+## OSPF Configuration and Routing Behavior
+Configure OSPF on all routers using process ID 1. Assign router IDs manually using the loopback interfaces. Place all interfaces into area 0 and verify that neighbor adjacencies are formed. Confirm that routing tables contain all expected networks and that routes are learned dynamically.
+
+## Static and Default Routing
+Configure a static route on one router to simulate external network access and configure a default route on godzilla. Verify that the default route is propagated through OSPF and appears in the routing tables of other routers.
+
 ## Banner and Legal Notice
 Configure a message of the day banner that includes a security warning stating that "Unauthorized access to DanCorp systems is prohibited and that all activity may be monitored. Unauthorized breach is subject criminal and civil litigation." Verify that the banner is displayed before login on all access methods.
 
@@ -104,19 +117,6 @@ Enable logging timestamps and configure buffered logging. Generate a test log ev
 ## Configuration Management
 Save the running configuration to startup-config and verify that the configuration is retained after a reload. Compare running and startup configurations to confirm consistency.
 
-## Loopback Configuration and Router Identification
-Create loopback interfaces on each router and assign the following addresses:  
-- godzilla → 1.1.1.1/24  
-- nessie → 2.2.2.2/24  
-- kingkong → 3.3.3.3/24  
-
-Verify that loopbacks are reachable from all routers and use them as router IDs where required.
-
-## OSPF Configuration and Routing Behavior
-Configure OSPF on all routers using process ID 1. Assign router IDs manually using the loopback interfaces. Place all interfaces into area 0 and verify that neighbor adjacencies are formed. Confirm that routing tables contain all expected networks and that routes are learned dynamically.
-
-## Static and Default Routing
-Configure a static route on one router to simulate external network access and configure a default route on godzilla. Verify that the default route is propagated through OSPF and appears in the routing tables of other routers.
 
 ## Failure Testing and Convergence
 Shut down a link between two routers and observe the changes in routing tables. Verify that alternate paths are used where available and that connectivity is maintained. Restore the link and observe OSPF convergence to ensure the network stabilizes correctly.
