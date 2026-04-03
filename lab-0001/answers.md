@@ -87,7 +87,7 @@ Configure a user account "cisco" with secret "ccna", ensuring that it is protect
 ## SSH Configuration
 Ensure the domain name "dancorp.com" is configured, then generate RSA keys with a maximum available size of 4096 bits. Enable SSH version 2 only and verify that SSH is active. Test remote access by connecting from another device using SSH and confirm that login is successful using the cisco user account. Verify that Telnet connections are rejected and that sessions are encrypted.
 <p align="center">
-  <img src="./image-19.png" width="500">
+  <img src="./image-22.png" width="500">
   <img src="./image-20.png" width="500"><br>
   <img src="./image-21.png" width="500">
 </p>
