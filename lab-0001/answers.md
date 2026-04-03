@@ -139,7 +139,7 @@ Configure a static route on one router to simulate external network access and c
 <table align="center">
   <tr>
     <td align="center">
-      <img src="./image-37.png" width="500">
+      <img src="./image-37.png" width="600">
     </td>
     <td align="center">
       <img src="./image-38.png" width="600"><br><br>
