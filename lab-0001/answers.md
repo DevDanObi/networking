@@ -41,7 +41,8 @@ Configure each router with the hostname godzilla, kingkong, and nessie respectiv
 </p>
 
 ## IP Addressing and Subnet Design
-Assign IP addresses to all router interfaces based on the addressing scheme provided in the topology diagram shown above. Determine the correct subnet masks for each network segment without relying on predefined values and ensure all IP addresses fall within valid ranges. Verify that there are no overlapping addresses or conflicts. Confirm connectivity between directly connected routers using ping and ensure all interfaces in use are operational. Configure "godzialla" to provide the default route to the internet for the entire network, the interface leading to the internet will be a dchp client to the ISP network.
+Assign IP addresses to all router interfaces based on the addressing scheme provided in the topology diagram shown above. Determine the correct subnet masks for each network segment without relying on predefined values and ensure all IP addresses fall within valid ranges. Verify that there are no overlapping addresses or conflicts. Confirm connectivity between directly connected routers using ping and ensure all interfaces in use are operational. Configure "godzialla" to provide the default route to the internet for the entire network, the interface leading to the internet should be configured as a dhcp client.
+
 
 #### Answers
 
@@ -77,6 +78,8 @@ Hence,
 
 ## Console Access Configuration
 Configure a user account "cisco" with secret "ccna", ensuring that it is protected using the strongest encryption method supported by the device Configure the console line to require login with a local user account. Set an 30-minute exec timeout. Enable synchronous logging.
+
+#### Answers
 <p align="center">
   <img src="./image-16.png" width="500">
   <img src="./image-17.png" width="500"><br>
@@ -86,6 +89,8 @@ Configure a user account "cisco" with secret "ccna", ensuring that it is protect
 
 ## SSH Configuration
 Ensure the domain name "dancorp.com" is configured, then generate RSA keys with a maximum available size of 4096 bits. Enable SSH version 2 only and verify that SSH is active. 
+
+#### Answers
 <p align="center">
   <img src="./image-22.png" width="500">
   <img src="./image-20.png" width="500"><br>
@@ -94,38 +99,54 @@ Ensure the domain name "dancorp.com" is configured, then generate RSA keys with 
 
 ## Loopback Configuration and Router Identification
 Create loopback0 interfaces on each router and assign the following addresses:  
-- godzilla → 11.11.11.11/24  
-- nessie → 2.2.2.2/24  
-- kingkong → 3.3.3.3/24  
+- godzilla → 11.11.11.11/32  
+- nessie → 2.2.2.2/32
+- kingkong → 3.3.3.3/32
+  
+#### Answers  
 
+<p align="center">
+  <img src="./image-25.png" width="500">
+  <img src="./image-26.png" width="500"><br>
+  <img src="./image-27.png" width="500">
+</p>
 
 ## OSPF Configuration and Routing Behavior
-Configure OSPF on all routers using process ID 1. Assign router IDs manually using the loopback interfaces. Place all interfaces into area 0 and verify that neighbor adjacencies are formed. Confirm that routing tables contain all expected networks and that routes are learned dynamically.
+Configure OSPF on all routers using process ID 1. Assign router IDs manually using the respective loopback addresses. Enable OSPF on all active interfaces and advertise every configured interface's IP address into area 0, ensuring full inclusion in the backbone area. Verify that OSPF neighbor adjacencies are successfully established on all directly connected links. Confirm that all interface networks are dynamically advertised and learned via OSPF by inspecting the routing table, ensuring that routes appear as OSPF-learned entries and reflect complete topology convergence.
+
+#### Answers  
+<p align="center">
+  <img src="./image-28.png" width="500">
+  <img src="./image-29.png" width="500"><br>
+  <img src="./image-30.png" width="500">
+</p>
+
+#### OSPF Routes
+<p align="center">
+  <img src="./image-31.png" width="500">
+  <img src="./image-34.png" width="500"><br>
+  <img src="./image-35.png" width="500">
+</p>
+
 
 ## Static and Default Routing
 Configure a static route on one router to simulate external network access and configure a default route on godzilla. Verify that the default route is propagated through OSPF and appears in the routing tables of other routers.
 
-## Banner and Legal Notice
-Configure a message of the day banner that includes a security warning stating that "Unauthorized access to DanCorp systems is prohibited and that all activity may be monitored. Unauthorized breach is subject criminal and civil litigation." Verify that the banner is displayed before login on all access methods.
+#### Answers  
 
-## Interface Preparation and Device Hardening
-Shut down all unused interfaces and apply descriptions to active interfaces indicating the connected device. Verify that only required interfaces are up and confirm their operational status. Disable unnecessary services such as the HTTP server and HTTPS server. Verify that no web-based access is available to the device.
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="./image-37.png" width="500">
+    </td>
+    <td align="center">
+      <img src="./image-38.png" width="600"><br><br>
+      <img src="./image-39.png" width="600">
+    </td>
+  </tr>
+</table>
 
-## Logging, Time, and System Integrity
-Enable logging timestamps and configure buffered logging. Generate a test log event and verify that logs are recorded correctly. Set the correct time zone and verify system time. Configure NTP if available and confirm that time synchronization is functioning.
 
-## Configuration Management
-Save the running configuration to startup-config and verify that the configuration is retained after a reload. Compare running and startup configurations to confirm consistency.
-
-
-## Failure Testing and Convergence
-Shut down a link between two routers and observe the changes in routing tables. Verify that alternate paths are used where available and that connectivity is maintained. Restore the link and observe OSPF convergence to ensure the network stabilizes correctly.
-
-## Security Reinforcement and Validation
-Verify that all passwords are encrypted, that only SSH access is permitted, and that unnecessary services are disabled. Confirm that access control mechanisms are working correctly and that unauthorized access is prevented.
-
-## Troubleshooting and Recovery
-Identify and resolve issues such as missing routes, OSPF adjacency failures, incorrect network statements, and misconfigured static routes. Restore full connectivity across all routers and confirm that the network operates correctly under normal and failure conditions.
 
 ## Final Objective
 Ensure that all routers can reach all loopback networks, that OSPF is functioning correctly with stable adjacencies, and that routing tables reflect accurate and optimized paths. Confirm that the network can recover from failures and maintain full connectivity across all devices.
