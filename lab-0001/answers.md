@@ -35,9 +35,9 @@ Configure each router with the hostname godzilla, kingkong, and nessie respectiv
 #### Answers
 
 <p align="center">
-  <img src="./image-1.png" width="450">
-  <img src="./image-3.png" width="450"><br>
-  <img src="./image-4.png" width="450">
+  <img src="./image-1.png" width="600">
+  <img src="./image-3.png" width="600"><br>
+  <img src="./image-4.png" width="600">
 </p>
 
 ## IP Addressing and Subnet Design
@@ -78,18 +78,18 @@ Hence,
 ## Console Access Configuration
 Configure a user account "cisco" with secret "ccna", ensuring that it is protected using the strongest encryption method supported by the device Configure the console line to require login with a local user account. Set an 30-minute exec timeout. Enable synchronous logging.
 <p align="center">
-  <img src="./image-16.png" width="500">
-  <img src="./image-17.png" width="500"><br>
-  <img src="./image-18.png" width="500">
+  <img src="./image-16.png" width="600">
+  <img src="./image-17.png" width="600"><br>
+  <img src="./image-18.png" width="600">
 </p>
 
 
 ## SSH Configuration
 Ensure the domain name "dancorp.com" is configured, then generate RSA keys with a maximum available size of 4096 bits. Enable SSH version 2 only and verify that SSH is active. Test remote access by connecting from another device using SSH and confirm that login is successful using the cisco user account. Verify that Telnet connections are rejected and that sessions are encrypted.
 <p align="center">
-  <img src="./image-22.png" width="500">
-  <img src="./image-20.png" width="500"><br>
-  <img src="./image-24.png" width="500">
+  <img src="./image-22.png" width="600">
+  <img src="./image-20.png" width="600"><br>
+  <img src="./image-24.png" width="600">
 </p>
 
 ## Banner and Legal Notice
