@@ -99,34 +99,40 @@ Ensure the domain name "dancorp.com" is configured, then generate RSA keys with 
 
 ## Loopback Configuration and Router Identification
 Create loopback0 interfaces on each router and assign the following addresses:  
-- godzilla → 11.11.11.11/32  
-- nessie → 2.2.2.2/32
-- kingkong → 3.3.3.3/32
+- godzilla → 10.100.0.1/32
+- nessie → 10.100.0.2/32
+- kingkong → 10.100.0.3/32
   
 #### Answers  
 
 <p align="center">
-  <img src="./image-25.png" width="500">
-  <img src="./image-26.png" width="500"><br>
-  <img src="./image-27.png" width="500">
+  <img src="./image-40.png" width="500">
+  <img src="./image-41.png" width="500"><br>
+  <img src="./image-42.png" width="500">
 </p>
+
+![alt text](image-40.png)
+![alt text](image-41.png)
+![alt text](image-42.png)
 
 ## OSPF Configuration and Routing Behavior
 Configure OSPF on all routers using process ID 1. Assign router IDs manually using the respective loopback addresses. Enable OSPF on all active interfaces and advertise every configured interface's IP address into area 0, ensuring full inclusion in the backbone area. Verify that OSPF neighbor adjacencies are successfully established on all directly connected links. Confirm that all interface networks are dynamically advertised and learned via OSPF by inspecting the routing table, ensuring that routes appear as OSPF-learned entries and reflect complete topology convergence.
 
-#### Answers  
+#### Answers 
+
+
 <p align="center">
-  <img src="./image-28.png" width="500">
-  <img src="./image-29.png" width="500"><br>
-  <img src="./image-30.png" width="500">
+  <img src="./image-43.png" width="2000">
 </p>
+
 
 #### OSPF Routes
 <p align="center">
-  <img src="./image-31.png" width="500">
-  <img src="./image-34.png" width="500"><br>
-  <img src="./image-35.png" width="500">
+  <img src="./image-44.png" width="500">
+  <img src="./image-45.png" width="500"><br>
+  <img src="./image-46.png" width="500">
 </p>
+
 
 
 ## Static and Default Routing
@@ -150,6 +156,14 @@ Configure a static route on one router to simulate external network access and c
 
 ## Final Objective
 Ensure that all routers can reach all loopback networks, that OSPF is functioning correctly with stable adjacencies, and that routing tables reflect accurate and optimized paths. Confirm that the network can recover from failures and maintain full connectivity across all devices.
+
+
+<p align="center">
+  <img src="./image-47.png" width="500">
+  <img src="./image-48.png" width="500"><br>
+  <img src="./image-49.png" width="500">
+</p>
+
 
 ---
 

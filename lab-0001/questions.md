@@ -45,9 +45,9 @@ Ensure the domain name "dancorp.com" is configured, then generate RSA keys with 
 
 ## Loopback Configuration and Router Identification
 Create loopback0 interfaces on each router and assign the following addresses:  
-- godzilla → 11.11.11.11/32  
-- nessie → 2.2.2.2/32
-- kingkong → 3.3.3.3/32
+- godzilla → 10.100.0.1/32
+- nessie → 10.100.0.2/32
+- kingkong → 10.100.0.3/32
 
 ## OSPF Configuration and Routing Behavior
 Configure OSPF on all routers using process ID 1. Assign router IDs manually using the respective loopback addresses. Enable OSPF on all active interfaces and advertise every configured interface's IP address into area 0, ensuring full inclusion in the backbone area. Verify that OSPF neighbor adjacencies are successfully established on all directly connected links. Confirm that all interface networks are dynamically advertised and learned via OSPF by inspecting the routing table, ensuring that routes appear as OSPF-learned entries and reflect complete topology convergence.
