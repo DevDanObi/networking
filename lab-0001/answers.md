@@ -111,10 +111,6 @@ Create loopback0 interfaces on each router and assign the following addresses:
   <img src="./image-42.png" width="500">
 </p>
 
-![alt text](image-40.png)
-![alt text](image-41.png)
-![alt text](image-42.png)
-
 ## OSPF Configuration and Routing Behavior
 Configure OSPF on all routers using process ID 1. Assign router IDs manually using the respective loopback addresses. Enable OSPF on all active interfaces and advertise every configured interface's IP address into area 0, ensuring full inclusion in the backbone area. Verify that OSPF neighbor adjacencies are successfully established on all directly connected links. Confirm that all interface networks are dynamically advertised and learned via OSPF by inspecting the routing table, ensuring that routes appear as OSPF-learned entries and reflect complete topology convergence.
 
