@@ -8,7 +8,7 @@ This lab is adapted from the original work available at:
 
 https://github.com/DevDanielAwele/labs/blob/main/gns3vault-archive/CCNA%20RS/icnd1-assesment-lab/icnd1-assesment-lab.md
 
-The original lab was sourced from NetworkLessons / GNS3Vault-style materials. This version has been modified to reflect modern infrastructure practices, including improved structure, clearer task separation, enhanced security emphasis, and alignment with enterprise workflows.
+The original lab was sourced from NetworkLessons github repo and some of Jeremys IT LAB. This version has been modified to reflect modern infrastructure practices, including improved structure, clearer task separation, enhanced security emphasis, and alignment with enterprise workflows.
 
 ## Scenario
 <p align="center">
@@ -76,10 +76,21 @@ Hence,
 
 
 ## Console Access Configuration
-Configure a user account cisco with secret ccna on each router. Use type the highest encryption algorithm available in the device. Configure the console line to require login with a local user account. Set a 30-minute inactivity timeout. Enable synchronous logging.
+Configure a user account "cisco" with secret "ccna", ensuring that it is protected using the strongest encryption method supported by the device Configure the console line to require login with a local user account. Set an 30-minute exec timeout. Enable synchronous logging.
+<p align="center">
+  <img src="./image-16.png" width="500">
+  <img src="./image-17.png" width="500"><br>
+  <img src="./image-18.png" width="500">
+</p>
+
 
 ## SSH Configuration
-Ensure the domain name dancorp.com is configured, then generate RSA keys with a maximum available size of 4096 bits. Enable SSH version 2 only and verify that SSH is active. Test remote access by connecting from another device using SSH and confirm that login is successful using the cisco user account. Verify that Telnet connections are rejected and that sessions are encrypted.
+Ensure the domain name "dancorp.com" is configured, then generate RSA keys with a maximum available size of 4096 bits. Enable SSH version 2 only and verify that SSH is active. Test remote access by connecting from another device using SSH and confirm that login is successful using the cisco user account. Verify that Telnet connections are rejected and that sessions are encrypted.
+<p align="center">
+  <img src="./image-19.png" width="500">
+  <img src="./image-20.png" width="500"><br>
+  <img src="./image-21.png" width="500">
+</p>
 
 ## Banner and Legal Notice
 Configure a message of the day banner that includes a security warning stating that "Unauthorized access to DanCorp systems is prohibited and that all activity may be monitored. Unauthorized breach is subject criminal and civil litigation." Verify that the banner is displayed before login on all access methods.
