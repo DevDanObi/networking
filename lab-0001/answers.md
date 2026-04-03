@@ -89,7 +89,7 @@ Ensure the domain name "dancorp.com" is configured, then generate RSA keys with 
 <p align="center">
   <img src="./image-22.png" width="500">
   <img src="./image-20.png" width="500"><br>
-  <img src="./image-21.png" width="500">
+  <img src="./image-23.png" width="500">
 </p>
 
 ## Banner and Legal Notice
